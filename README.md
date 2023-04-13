@@ -2,7 +2,7 @@
 Docker container to pull pager message into a discord channel from an RTL-SDR
 
 ```
-docker run  idanoo/rtl-pager-discord
+docker run -e "FREQUENCY=157.945M" -e "GAIN=40.2" -e "DISCORD_WEBHOOK_URL=https:..." idanoo/rtl-pager-discord
 
 ENV VARS:    
 - FREQUENCY    
