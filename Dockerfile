@@ -10,4 +10,5 @@ RUN apt install -y redis rtl-sdr multimon-ng
 COPY pager.sh /pager.sh
 RUN chmod +x /pager.sh
 
-ENTRYPOINT ["/bin/bash", "/pager.sh"]
+# Allow entering via /bin/bash
+CMD ["/bin/bash", "/pager.sh"]
