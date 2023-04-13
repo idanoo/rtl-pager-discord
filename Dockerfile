@@ -10,4 +10,4 @@ RUN apt install -y redis rtl-sdr multimon-ng
 COPY pager.sh /pager.sh
 RUN chmod +x /pager.sh
 
-RUN ["bash", "/pager.sh"]
+RUN ["/pager.sh"]
